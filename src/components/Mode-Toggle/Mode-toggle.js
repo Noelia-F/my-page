@@ -1,3 +1,4 @@
+import React from 'react';
 import './Mode-toggle.css';
 
 function ModeToggle({onClickChangeMode}) {

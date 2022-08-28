@@ -1,0 +1,63 @@
+.App-principal {
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 50px;
+  padding: 24px;
+  background-color: var(--PRINCIPAL-BACKGROUND);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.App-title-box {
+  padding: 24px;
+  border: 2px solid #ff7373;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.App-title {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  font-family: 'Anton', sans-serif;
+  color: #ff7373;
+}
+
+.App-subtitle {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+.App-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.App-social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-item {
+  margin: 0 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.app-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.App-icon path{
+  fill: var(--SECONDARY-COLOR);
+}
