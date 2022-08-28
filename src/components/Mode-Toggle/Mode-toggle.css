@@ -1,0 +1,32 @@
+.light-mode .App-toggle__circle {
+  left: 0;
+}
+.dark-mode .App-toggle__circle {
+  right: 0;
+}
+
+.App-toggle {
+  width: 50px;
+  height: 24px;
+  border-radius: 12px;
+  background: none;
+	color: inherit;
+	border: 2px solid var(--TOGGLE-BORDER);
+  background-color: var(--TOGGLE-BACKGROUND);
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  position: relative;
+}
+
+.App-toggle__circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 18px;
+  border-style: solid;
+  border-width: 1px;
+  position: absolute;
+  top: 0;
+  background-color: var(--TOGGLE-CIRCLE-BACKGROUND);
+}
