@@ -4,6 +4,8 @@
   --TOGGLE-BORDER: white;
   --PRINCIPAL-BACKGROUND: #E3FFE3;
   --SECONDARY-COLOR: #333;
+  --PRINCIPAL-TITLE-SIZE: 24px;
+  --PRINCIPAL-SUBTITLE-SIZE: 18px;
   text-align: center;
   position: relative;
   color: var(--SECONDARY-COLOR);
@@ -22,4 +24,11 @@
   --TOGGLE-BORDER: #333;
   --PRINCIPAL-BACKGROUND: #E3FFE3;
   --SECONDARY-COLOR: #333;
+}
+
+@media (min-width: 500px) {
+  .App {
+    --PRINCIPAL-TITLE-SIZE: 36px;
+    --PRINCIPAL-SUBTITLE-SIZE: 24px;
+  }
 }
