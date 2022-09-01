@@ -8,7 +8,7 @@ function Header({links, onChangeMode}) {
     setToggle( !toggleButton )
   };
   const renderListOfLinks = (links) => {
-    return links.map(link => <a href={link.path} key={link.id} className="App-link">{link.name}</a>);
+    return links.map(link => <a href={link.path} key={link.id} className="App-link App-link--menu">{link.name}</a>);
   }
   return (
     <header className="App-header">

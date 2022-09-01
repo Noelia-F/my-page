@@ -9,7 +9,7 @@ function Principal({socialMedia}) {
     return socialMedia.map(social => {
       return (
         <li className="App-item" aria-label={social.id} key={social.id}>
-          <a target="_blank" rel="noreferrer" href={social.path} className="App-link">
+          <a target="_blank" rel="noreferrer" href={social.path}>
             {getSocialMediaComponent(social)}
           </a>
         </li>)

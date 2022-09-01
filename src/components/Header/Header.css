@@ -123,7 +123,7 @@
   transition: 0.7s 0.7s;
 }
 
-.App-link {
+.App-link--menu {
   margin: 12px;
   color: var(--PRINCIPAL-COLOR);
   display: block;
@@ -137,11 +137,11 @@
     height: 100%;
     width: 100%;
   }
-  .App-link:hover {
+  .App-link--menu:hover {
     color: 	var(--ACCENT-BACKGROUND);
     font-weight: bold;
   }
-  .App-link {
+  .App-link--menu {
     color: var(--SECONDARY-COLOR);
     margin: 0 12px 0 0;
     display: inline-block;
