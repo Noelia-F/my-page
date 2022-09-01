@@ -3,10 +3,12 @@
   --TOGGLE-CIRCLE-BACKGROUND: white;
   --TOGGLE-BORDER: white;
   --PRINCIPAL-BACKGROUND: #E3FFE3;
-  --TEXT-COLOR: #333;
+  --SECONDARY-COLOR: #333;
+  --PRINCIPAL-TITLE-SIZE: 24px;
+  --PRINCIPAL-SUBTITLE-SIZE: 18px;
   text-align: center;
   position: relative;
-  color: var(--TEXT-COLOR);
+  color: var(--SECONDARY-COLOR);
 }
 
 .dark-mode {
@@ -14,98 +16,19 @@
   --TOGGLE-CIRCLE-BACKGROUND: white;
   --TOGGLE-BORDER: white;
   --PRINCIPAL-BACKGROUND: #333;
-  --TEXT-COLOR: white;
+  --SECONDARY-COLOR: white;
 }
 .light-mode {
   --TOGGLE-BACKGROUND: lightseagreen;
   --TOGGLE-CIRCLE-BACKGROUND: yellow;
   --TOGGLE-BORDER: #333;
   --PRINCIPAL-BACKGROUND: #E3FFE3;
-  --TEXT-COLOR: #333;
+  --SECONDARY-COLOR: #333;
 }
 
-.App-principal {
-  box-sizing: border-box;
-  position: relative;
-  margin-top: 50px;
-  padding: 24px;
-  background-color: var(--PRINCIPAL-BACKGROUND);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-.App-title-box {
-  padding: 24px;
-  border: 2px solid #ff7373;
-  border-radius: 3px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-}
-
-.App-title {
-  margin: 0;
-  padding: 0;
-  font-size: 36px;
-  font-family: 'Anton', sans-serif;
-  color: #ff7373;
-}
-
-.App-subtitle {
-  margin: 0;
-  padding: 0;
-  font-size: 24px;
-}
-
-.App-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.App-social {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.App-item {
-  margin: 0 8px;
-}
-
-.light-mode .App-toggle__circle {
-  left: 0;
-}
-.dark-mode .App-toggle__circle {
-  right: 0;
-}
-
-.App-toggle {
-  width: 50px;
-  height: 24px;
-  border-radius: 12px;
-  background: none;
-	color: inherit;
-	border: 2px solid var(--TOGGLE-BORDER);
-  background-color: var(--TOGGLE-BACKGROUND);
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-  position: relative;
-}
-
-.App-toggle__circle {
-  width: 18px;
-  height: 18px;
-  border-radius: 18px;
-  border-style: solid;
-  border-width: 1px;
-  position: absolute;
-  top: 0;
-  background-color: var(--TOGGLE-CIRCLE-BACKGROUND);
+@media (min-width: 500px) {
+  .App {
+    --PRINCIPAL-TITLE-SIZE: 36px;
+    --PRINCIPAL-SUBTITLE-SIZE: 24px;
+  }
 }
