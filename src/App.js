@@ -35,19 +35,19 @@ function App() {
     {
       id: 'linkedin',
       name: 'Linkedin',
-      path: '#',
+      path: 'https://www.linkedin.com/in/noeliafronton/',
       email: false,
     },
     {
       id: 'github',
       name: 'Github',
-      path: '#',
+      path: 'https://github.com/Noelia-F',
       email: false,
     },
     {
       id: 'email',
       name: 'Email',
-      path: '#',
+      path: 'mailto:noelia.fronton.g@gmail.com',
       email: true,
     },
   ]
