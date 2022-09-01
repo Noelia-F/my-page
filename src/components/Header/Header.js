@@ -12,8 +12,9 @@ function Header({links, onChangeMode}) {
   }
   return (
     <header className="App-header">
-      <section>
-        <button className={`App-button ${toggleButton ? 'App-button--opened' : 'App-button--closed'}`} onClick={() => changeMode()}>
+      <section className={`App-menu ${toggleButton ? 'App-menu--opened' : 'App-menu--closed'}`} >
+        <div className="App-nav-background" onClick={() => changeMode()}></div>
+        <button className="App-button" onClick={() => changeMode()}>
           <span className='App-button-bar App-button-bar--top'></span>
           <span className='App-button-bar App-button-bar--middle'></span>
           <span className='App-button-bar App-button-bar--bottom'></span>
