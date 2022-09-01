@@ -59,7 +59,7 @@ function App() {
   return (
     <div className={`App ${lightMode ? 'light-mode' : 'dark-mode'}`}>
       <Header links={links} onChangeMode={changeMode} />
-      <Principal/>
+      <Principal socialMedia={socialMedia}/>
       <footer>
         Footer here...
       </footer>
