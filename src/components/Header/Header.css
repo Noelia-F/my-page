@@ -13,6 +13,51 @@
   background-color: var(--PRINCIPAL-BACKGROUND);
 }
 
+.App-button {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.App-button--opened .App-button-bar--top {
+  transform: rotate(45deg) translateY(12px);
+  transition: 0.55s 0.5s;
+}
+
+.App-button--opened .App-button-bar--bottom {
+  transform: rotate(-45deg) translateY(-12px);
+  transition: 0.55s 0.5s;
+}
+
+.App-button--opened .App-button-bar--middle {
+  visibility: hidden;
+  transition: 0.3s 0.3s;
+}
+
+.App-button--closed .App-button-bar--top {
+  transform: rotate(0) translateY(0);
+  transition: 0.55s 0.5s;
+}
+
+.App-button--closed .App-button-bar--bottom {
+  transform: rotate(0) translateY(0);
+  transition: 0.55s 0.5s;
+}
+
+.App-button--closed .App-button-bar--middle {
+  visibility: visible;
+  transition: 0.7s 0.7s;
+}
+
+.App-button-bar {
+  height: 6px;
+  border: 3px;
+  width: 100%;
+  background-color: var(--SECONDARY-COLOR);
+}
+
 .App-link {
   margin-right: 12px;
   color: var(--SECONDARY-COLOR)
