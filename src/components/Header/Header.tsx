@@ -20,10 +20,10 @@ const Header: React.FunctionComponent<Props> = ({links, onChangeMode}) => {
     <header className="App-header">
       <section className={`App-menu ${toggleButton ? 'App-menu--opened' : 'App-menu--closed'}`} >
         <div className="App-nav-background" onClick={() => changeMode()}></div>
-        <button className="App-button" onClick={() => changeMode()}>
-          <span className='App-button-bar App-button-bar--top'></span>
-          <span className='App-button-bar App-button-bar--middle'></span>
-          <span className='App-button-bar App-button-bar--bottom'></span>
+        <button className="App-burger" onClick={() => changeMode()}>
+          <span className='App-burger-bar App-burger-bar--top'></span>
+          <span className='App-burger-bar App-burger-bar--middle'></span>
+          <span className='App-burger-bar App-burger-bar--bottom'></span>
         </button>
         <nav className="App-nav">
           {renderListOfLinks(links)}
