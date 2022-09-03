@@ -1,13 +1,19 @@
 import React, {useState} from 'react';
+import { Link } from '../../models/SocialMedia.model';
 import ModeToggle from '../Mode-Toggle/Mode-toggle';
 import './Header.css';
 
-function Header({links, onChangeMode}) {
+interface Props {
+  links: Link[];
+  onChangeMode(): any;
+}
+
+const Header: React.FunctionComponent<Props> = ({links, onChangeMode}) => {
   const [toggleButton, setToggle] = useState(false);
   const changeMode =  function () {
     setToggle( !toggleButton )
   };
-  const renderListOfLinks = (links) => {
+  const renderListOfLinks = (links: Link[]) => {
     return links.map(link => <a href={link.path} key={link.id} className="App-link App-link--menu">{link.name}</a>);
   }
   return (
