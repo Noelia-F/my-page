@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { Link } from '../../models/SocialMedia.model';
+import Languages from '../Languages/Languages';
 import ModeToggle from '../Mode-Toggle/Mode-toggle';
 import './Header.css';
 
@@ -29,7 +30,10 @@ const Header: React.FunctionComponent<Props> = ({links, onChangeMode}) => {
           {renderListOfLinks(links)}
         </nav>
       </section>
-      <ModeToggle onClickChangeMode={onChangeMode} />
+      <section className='App-header__config'>
+        <Languages />
+        <ModeToggle onClickChangeMode={onChangeMode} />
+      </section>
     </header>
   );
 }
