@@ -1,8 +1,11 @@
 import React, {useState} from 'react';
 import './App.css';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
+import Career from './pages/Career/Career';
+import Knowledge from './pages/Knowledge/Knowledge';
 import Principal from './pages/Principal/Principal';
-import Projects from './pages/projects/Projects';
+import Projects from './pages/Projects/Projects';
 import { NAV_LINKS } from './shared/constants'; 
 
 function App() {
@@ -18,9 +21,9 @@ function App() {
       <Header links={links} onChangeMode={changeMode} />
       <Principal/>
       <Projects/>
-      <footer>
-        Footer here...
-      </footer>
+      <Career />
+      <Knowledge />
+      <Footer />
     </div>
   );
 }
