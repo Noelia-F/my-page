@@ -1,7 +1,7 @@
 .App-principal {
   box-sizing: border-box;
   position: relative;
-  padding: 50px 24px 24px 24px;
+  padding: 100px 24px 24px 24px;
   background-color: var(--PRINCIPAL-COLOR);
   display: flex;
   flex-direction: column;
@@ -16,6 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .App-principal__button {
@@ -24,25 +25,12 @@
 
 .App-title-box {
   padding: 24px;
-  border: 2px solid var(--ACCENT-COLOR);
+  border: 2px solid var(--CONTRAST-COLOR);
   border-radius: 3px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 80%;
   max-width: 500px;
-}
-
-.App-title {
-  margin: 0;
-  padding: 0;
-  font-size: var(--PRINCIPAL-TITLE-SIZE);
-  font-family: 'Anton', sans-serif;
-  color: var(--ACCENT-COLOR);
-}
-
-.App-subtitle {
-  margin: 0;
-  padding: 0;
-  font-size: var(--PRINCIPAL-SUBTITLE-SIZE);
+  text-align: center;
 }
