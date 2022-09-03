@@ -73,6 +73,10 @@
   background-color: var(--PRINCIPAL-COLOR);
 }
 
+.dark-mode .App-menu--opened .App-burger-bar {
+  background-color: var(--CONTRAST-COLOR);
+}
+
 @media (min-width: 720px) {
   .App-burger {
     display: none;
@@ -84,7 +88,7 @@
 /** Nav */
 .App-nav {
   box-sizing: border-box;
-  background-color: var(--CONTRAST-COLOR);
+  background-color: var(--SECONDARY-COLOR);
   position: absolute;
   top: 0;
   left: -200px;
@@ -108,7 +112,6 @@
 }
 
 .App-menu--closed .App-nav-background {
-  background-color: rgba(51,51,51,0);
   visibility: hidden;
   transition: 0.7s 0.7s;
 }
@@ -127,6 +130,10 @@
   padding: 12px;
   color: var(--PRINCIPAL-COLOR);
   display: block;
+}
+
+.dark-mode .App-link--menu {
+  color: var(--CONTRAST-COLOR);
 }
 
 @media (min-width: 720px) {

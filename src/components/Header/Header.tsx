@@ -17,10 +17,10 @@ const Header: React.FunctionComponent<Props> = ({links, onChangeMode}) => {
     return links.map(link => <a href={link.path} key={link.id} className="App-link--menu">{link.name}</a>);
   }
   return (
-    <header className="App-header">
+    <header className='App-header'>
       <section className={`App-menu ${toggleButton ? 'App-menu--opened' : 'App-menu--closed'}`} >
-        <div className="App-nav-background" onClick={() => changeMode()}></div>
-        <button className="App-burger" onClick={() => changeMode()}>
+        <div className='App-nav-background' onClick={() => changeMode()}></div>
+        <button className='App-burger' onClick={() => changeMode()}>
           <span className='App-burger-bar App-burger-bar--top'></span>
           <span className='App-burger-bar App-burger-bar--middle'></span>
           <span className='App-burger-bar App-burger-bar--bottom'></span>
