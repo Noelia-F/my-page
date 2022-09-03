@@ -16,11 +16,6 @@ function App() {
       name: 'Proyectos',
     },
     {
-      id: 'nav-aboutme', 
-      path: '#',
-      name: 'Sobre mí',
-    },
-    {
       id: 'nav-career', 
       path: '#',
       name: 'Trayectoria',

@@ -2,13 +2,13 @@ import React, {useState} from 'react';
 import ModeToggle from '../Mode-Toggle/Mode-toggle';
 import './Header.css';
 
-function Header({links, onChangeMode}) {
+function Header({links, onChangeMode} : {links: any; onChangeMode: any}) {
   const [toggleButton, setToggle] = useState(false);
   const changeMode =  function () {
     setToggle( !toggleButton )
   };
-  const renderListOfLinks = (links) => {
-    return links.map(link => <a href={link.path} key={link.id} className="App-link App-link--menu">{link.name}</a>);
+  const renderListOfLinks = (links: any) => {
+    return links.map((link: any) => <a href={link.path} key={link.id} className="App-link App-link--menu">{link.name}</a>);
   }
   return (
     <header className="App-header">

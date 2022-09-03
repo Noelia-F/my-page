@@ -4,9 +4,9 @@ import {ReactComponent as Linkedin} from "../../icons/linkedin.svg";
 import {ReactComponent as Github} from "../../icons/github.svg";
 import {ReactComponent as Email} from "../../icons/email.svg";
 
-function Principal({socialMedia}) {
-  const renderListOfSocialMedia = (socialMedia) => {
-    return socialMedia.map(social => {
+function Principal({socialMedia}:{socialMedia: any}) {
+  const renderListOfSocialMedia = (socialMedia: any) => {
+    return socialMedia.map((social: any) => {
       return (
         <li className="App-item" aria-label={social.id} key={social.id}>
           <a target="_blank" rel="noreferrer" href={social.path}>
@@ -15,7 +15,7 @@ function Principal({socialMedia}) {
         </li>)
     });
   }
-  const getSocialMediaComponent = (social) => {
+  const getSocialMediaComponent = (social: any) => {
     if(social.id === 'linkedin') {
       return (<Linkedin className="App-icon"/>)
     } else if (social.id === 'github') {
