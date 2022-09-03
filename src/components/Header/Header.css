@@ -66,7 +66,7 @@
 }
 
 .App-menu--closed .App-burger-bar {
-  background-color: var(--SECONDARY-COLOR);
+  background-color: var(--CONTRAST-COLOR);
 }
 
 .App-menu--opened .App-burger-bar {
@@ -84,7 +84,7 @@
 /** Nav */
 .App-nav {
   box-sizing: border-box;
-  background-color: var(--SECONDARY-COLOR);
+  background-color: var(--CONTRAST-COLOR);
   position: absolute;
   top: 0;
   left: -200px;
@@ -142,7 +142,7 @@
     font-weight: bold;
   }
   .App-link--menu {
-    color: var(--SECONDARY-COLOR);
+    color: var(--CONTRAST-COLOR);
     margin: 0 12px 0 0;
     display: inline-block;
   }

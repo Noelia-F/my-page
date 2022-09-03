@@ -1,11 +1,11 @@
 import React from 'react';
 import './Principal.css';
-import SocialMedia from '../Social-media/Social-media';
-import Button from '../Button/Button';
+import SocialMedia from '../../components/Social-media/Social-media';
+import Button from '../../components/Button/Button';
 
 const Principal: React.FunctionComponent = () => {
   return (
-    <section className="App-principal">
+    <section className="App-section">
       <div className='App-principal__content'>
         <article className="App-title-box">
           <h1 className="App-title">Noelia Frontón García</h1>

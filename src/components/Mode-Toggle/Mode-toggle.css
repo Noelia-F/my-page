@@ -11,7 +11,7 @@
   border-radius: 12px;
   background: none;
 	color: inherit;
-	border: 2px solid var(--TOGGLE-BORDER);
+	border: 2px solid var(--CONTRAST-COLOR);
   background-color: var(--TOGGLE-BACKGROUND);
 	padding: 0;
 	font: inherit;
