@@ -8,8 +8,8 @@ function Principal({socialMedia}) {
   const renderListOfSocialMedia = (socialMedia) => {
     return socialMedia.map(social => {
       return (
-        <li className="App-item" aria-label={social.id}>
-          <a target="_blank" rel="noreferrer" href={social.path} key={social.id} className="App-link">
+        <li className="App-item" aria-label={social.id} key={social.id}>
+          <a target="_blank" rel="noreferrer" href={social.path}>
             {getSocialMediaComponent(social)}
           </a>
         </li>)

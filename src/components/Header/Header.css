@@ -10,15 +10,140 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--PRINCIPAL-BACKGROUND);
+  background-color: var(--PRINCIPAL-COLOR);
 }
 
-.App-link {
-  margin-right: 12px;
-  color: var(--SECONDARY-COLOR)
+.App-menu {
+  z-index: 1;
+}
+/** Button */
+
+.App-button {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 24px;
+  z-index: 1;
 }
 
-.App-link:hover {
-  color: 	#ff7373;
-  font-weight: bold;
+.App-menu--opened .App-button-bar--top {
+  transform: rotate(45deg) translateY(12px);
+  transition: 0.55s 0.5s;
+}
+
+.App-menu--opened .App-button-bar--bottom {
+  transform: rotate(-45deg) translateY(-12px);
+  transition: 0.55s 0.5s;
+}
+
+.App-menu--opened .App-button-bar--middle {
+  visibility: hidden;
+  transition: 0.3s 0.3s;
+}
+
+.App-menu--closed .App-button-bar--top {
+  transform: rotate(0) translateY(0);
+  transition: 0.55s 0.5s;
+}
+
+.App-menu--closed .App-button-bar--bottom {
+  transform: rotate(0) translateY(0);
+  transition: 0.55s 0.5s;
+}
+
+.App-menu--closed .App-button-bar--middle {
+  visibility: visible;
+  transition: 0.7s 0.7s;
+}
+
+.App-button-bar {
+  height: 6px;
+  border: 3px;
+  width: 100%;
+}
+
+.App-menu--closed .App-button-bar {
+  background-color: var(--SECONDARY-COLOR);
+}
+
+.App-menu--opened .App-button-bar {
+  background-color: var(--PRINCIPAL-COLOR);
+}
+
+@media (min-width: 720px) {
+  .App-button {
+    display: none;
+  }
+}
+
+/** Button */
+
+/** Nav */
+.App-nav {
+  box-sizing: border-box;
+  background-color: var(--SECONDARY-COLOR);
+  position: absolute;
+  top: 0;
+  left: -200px;
+  padding: 60px 24px 24px 24px;
+  height: 100vh;
+  width: 200px;
+}
+
+.App-nav-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.App-menu--opened .App-nav-background {
+  background-color: rgba(51,51,51,0.7);
+  visibility: visible;
+  transition: 0.7s 0.7s;
+}
+
+.App-menu--closed .App-nav-background {
+  background-color: rgba(51,51,51,0);
+  visibility: hidden;
+  transition: 0.7s 0.7s;
+}
+
+.App-menu--opened .App-nav {
+  transform: translateX(200px);
+  transition: 0.7s 0.7s;
+}
+
+.App-menu--closed .App-nav {
+  transform: translateX(0);
+  transition: 0.7s 0.7s;
+}
+
+.App-link--menu {
+  padding: 12px;
+  color: var(--PRINCIPAL-COLOR);
+  display: block;
+}
+
+@media (min-width: 720px) {
+  .App-nav {
+    background-color: transparent;
+    position: static;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .App-link--menu:hover {
+    color: 	var(--ACCENT-BACKGROUND);
+    font-weight: bold;
+  }
+  .App-link--menu {
+    color: var(--SECONDARY-COLOR);
+    margin: 0 12px 0 0;
+    display: inline-block;
+  }
 }
