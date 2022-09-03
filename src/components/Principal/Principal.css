@@ -4,14 +4,27 @@
   padding: 50px 24px 24px 24px;
   background-color: var(--PRINCIPAL-COLOR);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
 
+
+.App-principal__content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-principal__button {
+  transform: rotate(90deg);
+}
+
 .App-title-box {
   padding: 24px;
-  border: 2px solid var(--ACCENT-BACKGROUND);
+  border: 2px solid var(--ACCENT-COLOR);
   border-radius: 3px;
   display: flex;
   flex-direction: column;
@@ -25,7 +38,7 @@
   padding: 0;
   font-size: var(--PRINCIPAL-TITLE-SIZE);
   font-family: 'Anton', sans-serif;
-  color: var(--ACCENT-BACKGROUND);
+  color: var(--ACCENT-COLOR);
 }
 
 .App-subtitle {

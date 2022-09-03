@@ -1,0 +1,25 @@
+.App-button {
+  color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  background: var(--ACCENT-COLOR);
+  box-sizing: border-box;
+  padding: 12px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-button--rectangle {
+  border-radius: 3px;
+}
+
+.App-button--circular {
+  border-radius: 45px;
+  width: 45px;
+  height: 45px;
+}
