@@ -1,0 +1,24 @@
+.App-social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-item {
+  margin: 0 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.app-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.App-icon path{
+  fill: var(--SECONDARY-COLOR);
+}
