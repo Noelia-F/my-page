@@ -31,12 +31,17 @@
 .App-section {
   box-sizing: border-box;
   position: relative;
-  padding: 100px 24px 24px 24px;
+  padding: 94px 24px 24px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.App-section__content {
+  flex-grow: 1;
+  width: 100%;
 }
 
 .light-mode .App-section--contrast {
@@ -79,6 +84,7 @@
 
 .App-notes {
   font-size: 12px;
+  display: block;
 }
 
 @media (min-width: 500px) {

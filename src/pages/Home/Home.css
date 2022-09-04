@@ -1,17 +1,17 @@
-.App-main {
+.App-home {
   box-sizing: border-box;
   position: relative;
-  padding: 100px 24px 24px 24px;
+  padding: 24px;
   background-color: var(--PRINCIPAL-COLOR);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 
-.App-main__content {
+.App-home__content {
   flex-grow: 1;
   display: flex;
   align-items: center;
@@ -19,7 +19,7 @@
   width: 100%;
 }
 
-.App-main__button {
+.App-home__button {
   transform: rotate(90deg);
 }
 

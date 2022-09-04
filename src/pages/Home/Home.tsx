@@ -7,8 +7,8 @@ import { useTranslation } from 'react-i18next';
 const Home: React.FunctionComponent = () => {
   const { t } = useTranslation();
   return (
-    <section className="App-section">
-      <div className='App-main__content'>
+    <section className="App-home">
+      <div className='App-home__content'>
         <article className="App-title-box">
           <h1 className="App-title">Noelia Frontón García</h1>
           <h2 className="App-subtitle">Front-End Developer</h2>
@@ -16,7 +16,7 @@ const Home: React.FunctionComponent = () => {
           <SocialMedia />
         </article>
       </div>
-      <div className='App-main__button'>
+      <div className='App-home__button'>
         <Button shape="circular" label="&#10148;" />
       </div>
     </section>
