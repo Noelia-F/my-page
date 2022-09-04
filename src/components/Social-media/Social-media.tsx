@@ -3,7 +3,7 @@ import './Social-media.css';
 import {ReactComponent as Linkedin} from "../../icons/linkedin.svg";
 import {ReactComponent as Github} from "../../icons/github.svg";
 import {ReactComponent as Email} from "../../icons/email.svg";
-import { Link } from '../../models/SocialMedia.model';
+import { Link } from '../../models/Link.model';
 
 export const SOCIAL_MEDIA_LINKS: Link[] =  [
   {

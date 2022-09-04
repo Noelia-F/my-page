@@ -1,18 +1,22 @@
-import React, {useState} from 'react';
+import React from 'react';
+import i18n from '../../i18n';
 import './Languages.css';
 
+const lngs: any = {
+  en: { nativeName: 'English' },
+  es: { nativeName: 'Spanish' }
+};
+
 const Languages: React.FunctionComponent = () => {
-  const [language, setLanguage] = useState('es');
-  const onChangeLanguage =( event: any) => {
-    setLanguage(event.target.value);
-  }
   return (
-    <select className='App-languages' value={language} onChange={onChangeLanguage}>
-      <option value="es">Español</option>
-      <option value="en">Inglés</option>
-    </select>
+    <>
+      {Object.keys(lngs).map((lng) => (
+        <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
+          {lngs[lng].nativeName}
+        </button>
+      ))}
+    </>
   );
 }
 
 export default Languages;
-
