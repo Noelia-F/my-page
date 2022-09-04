@@ -13,7 +13,7 @@ const Home: React.FunctionComponent = () => {
           <h1 className="App-title">Noelia Frontón García</h1>
           <h2 className="App-subtitle">Front-End Developer</h2>
           <p className="App-description">{t('homeDescription')}</p>
-          <SocialMedia />
+          <SocialMedia color='contrast' />
         </article>
       </div>
       <div className='App-home__button'>

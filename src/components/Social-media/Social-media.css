@@ -19,6 +19,14 @@
   height: 24px;
 }
 
-.App-icon path{
+.App-icon--contrast path{
   fill: var(--CONTRAST-COLOR);
+}
+
+.App-icon--principal path {
+  fill: var(--PRINCIPAL-COLOR);
+}
+
+.App-icon:hover path {
+  fill: var(--ACCENT-COLOR);
 }
