@@ -1,0 +1,19 @@
+.App-working-process {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-working-process__image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-working-process svg {
+  max-width: 300px;
+  width: 100%;
+  display: block;
+}
