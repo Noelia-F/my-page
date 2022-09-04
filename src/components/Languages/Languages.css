@@ -8,3 +8,8 @@
   box-shadow: none;
   cursor: pointer;
 }
+
+.App-languages.selected {
+  font-weight: bold;
+  color: var(--ACCENT-COLOR);
+}
