@@ -136,6 +136,13 @@
   color: var(--CONTRAST-COLOR);
 }
 
+/** Config */
+.App-header__config {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
 @media (min-width: 720px) {
   .App-nav {
     background-color: transparent;
@@ -152,12 +159,5 @@
     color: var(--CONTRAST-COLOR);
     margin: 0 12px 0 0;
     display: inline-block;
-  }
-
-  /** Config */
-  .App-header__config {
-    display: flex;
-    gap: 12px;
-    align-items: center;
   }
 }
