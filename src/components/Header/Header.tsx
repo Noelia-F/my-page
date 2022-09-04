@@ -1,20 +1,45 @@
 import React, {useState} from 'react';
-import { Link } from '../../models/SocialMedia.model';
+import { useTranslation } from 'react-i18next';
+
+import { Link } from '../../models/Link.model';
+import Languages from '../Languages/Languages';
 import ModeToggle from '../Mode-Toggle/Mode-toggle';
 import './Header.css';
 
 interface Props {
-  links: Link[];
   onChangeMode(): any;
 }
 
-const Header: React.FunctionComponent<Props> = ({links, onChangeMode}) => {
+const Header: React.FunctionComponent<Props> = ({onChangeMode}) => {
   const [toggleButton, setToggle] = useState(false);
+  const { t } = useTranslation();
   const changeMode =  function () {
     setToggle( !toggleButton )
   };
+  const NAV_LINKS: Link[] = [
+    {
+      id: 'nav-home', 
+      path: '#',
+      name: 'home',
+    },
+    {
+      id: 'nav-projects', 
+      path: '#',
+      name: 'projects',
+    },
+    {
+      id: 'nav-career', 
+      path: '#',
+      name: 'career',
+    },
+    {
+      id: 'nav-knowledge', 
+      path: '#',
+      name: 'knowledge',
+    },
+  ];
   const renderListOfLinks = (links: Link[]) => {
-    return links.map(link => <a href={link.path} key={link.id} className="App-link--menu">{link.name}</a>);
+    return links.map(link => <a href={link.path} key={link.id} className="App-link--menu">{t(link.name)}</a>);
   }
   return (
     <header className='App-header'>
@@ -26,10 +51,13 @@ const Header: React.FunctionComponent<Props> = ({links, onChangeMode}) => {
           <span className='App-burger-bar App-burger-bar--bottom'></span>
         </button>
         <nav className="App-nav">
-          {renderListOfLinks(links)}
+          {renderListOfLinks(NAV_LINKS)}
         </nav>
       </section>
-      <ModeToggle onClickChangeMode={onChangeMode} />
+      <section className='App-header__config'>
+        <Languages />
+        <ModeToggle onClickChangeMode={onChangeMode} />
+      </section>
     </header>
   );
 }

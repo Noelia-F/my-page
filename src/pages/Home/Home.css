@@ -1,4 +1,4 @@
-.App-principal {
+.App-main {
   box-sizing: border-box;
   position: relative;
   padding: 100px 24px 24px 24px;
@@ -11,7 +11,7 @@
 }
 
 
-.App-principal__content {
+.App-main__content {
   flex-grow: 1;
   display: flex;
   align-items: center;
@@ -19,7 +19,7 @@
   width: 100%;
 }
 
-.App-principal__button {
+.App-main__button {
   transform: rotate(90deg);
 }
 

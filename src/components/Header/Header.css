@@ -153,4 +153,11 @@
     margin: 0 12px 0 0;
     display: inline-block;
   }
+
+  /** Config */
+  .App-header__config {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
 }
