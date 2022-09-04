@@ -4,7 +4,7 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Career from './pages/Career/Career';
 import Knowledge from './pages/Knowledge/Knowledge';
-import Principal from './pages/Principal/Principal';
+import Home from './pages/Home/Home';
 import Projects from './pages/Projects/Projects';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
   return (
     <div className={`App ${lightMode ? 'light-mode' : 'dark-mode'}`}>
       <Header onChangeMode={changeMode} />
-      <Principal/>
+      <Home/>
       <Projects/>
       <Career />
       <Knowledge />

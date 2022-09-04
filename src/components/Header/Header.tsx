@@ -18,9 +18,9 @@ const Header: React.FunctionComponent<Props> = ({onChangeMode}) => {
   };
   const NAV_LINKS: Link[] = [
     {
-      id: 'nav-principal', 
+      id: 'nav-home', 
       path: '#',
-      name: 'main',
+      name: 'home',
     },
     {
       id: 'nav-projects', 

@@ -19,7 +19,7 @@ i18n
     resources: {
       en: {
         translation: {
-          main: 'Main',
+          home: 'Home',
           projects: 'Projects',
           career: 'Career',
           knowledge: 'Knowledge',
@@ -27,7 +27,7 @@ i18n
       },
       es: {
         translation: {
-          main: 'Principal',
+          home: 'Home',
           projects: 'Proyectos',
           career: 'Trayectoria',
           knowledge: 'Conocimientos',
