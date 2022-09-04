@@ -23,6 +23,8 @@ i18n
           projects: 'Projects',
           career: 'Career',
           knowledge: 'Knowledge',
+          homeDescription: 'Web developer with kowledge in design',
+          workingProcess: 'We are working on it...'
         }
       },
       es: {
@@ -31,6 +33,8 @@ i18n
           projects: 'Proyectos',
           career: 'Trayectoria',
           knowledge: 'Conocimientos',
+          homeDescription: 'Desarrolladora web con conocimientos en diseño',
+          workingProcess: 'Estamos trabajando en ello...'
         }
       }
     }
