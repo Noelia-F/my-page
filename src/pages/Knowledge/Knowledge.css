@@ -1,0 +1,17 @@
+.App-card-list {
+  box-sizing: border-box;
+  background-color: var(--PRINCIPAL-COLOR);
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(50px, 1fr) );
+  gap: 24px;
+  border-radius: 5px;
+  list-style: none;
+  margin: 0;
+  padding: 24px;
+}
+
+.App-card-item img{
+  border-radius: 5px;
+  object-fit: cover;
+  width: 100%;
+}
