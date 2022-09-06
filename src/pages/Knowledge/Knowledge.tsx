@@ -8,12 +8,12 @@ const LANGUAGE_LIST: LanguageLevel[] = [
   {
     name: 'spanish',
     levelName: 'languageNative',
-    level: 4,
+    level: 6,
   },
   {
     name: 'english',
     levelName: 'languageUpperIntermediate',
-    level: 6,
+    level: 4,
   },
   {
     name: 'korean',

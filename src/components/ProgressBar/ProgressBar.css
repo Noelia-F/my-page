@@ -1,0 +1,18 @@
+.App-progress-bar {
+  display: flex;
+  align-items: center;
+}
+
+.App-progress-bar__dot {
+  margin: 0 6px;
+  height: 16px;
+  width: 16px;
+  background-color: var(--PRINCIPAL-COLOR);
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid var(--CONTRAST-COLOR);
+}
+
+.App-progress-bar__dot.completed {
+  background-color: var(--CONTRAST-COLOR);
+}
