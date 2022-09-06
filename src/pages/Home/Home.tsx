@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import SocialMedia from '../../components/Social-media/Social-media';
+import SocialMedia from '../../components/SocialMedia/SocialMedia';
 import Button from '../../components/Button/Button';
 import { useTranslation } from 'react-i18next';
 

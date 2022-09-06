@@ -1,5 +1,5 @@
 import React from 'react';
-import './Mode-toggle.css';
+import './ModeToggle.css';
 
 interface Props {
   onClickChangeMode(): any;

@@ -2,7 +2,7 @@ import React from 'react';
 import './Knowledge.css';
 import { useTranslation } from 'react-i18next';
 import CardList from '../../components/CardList/CardList';
-import LanguageSkills, { LanguageLevel } from '../../components/Language-skills/Language-skills';
+import LanguageSkills, { LanguageLevel } from '../../components/LanguageSkills/LanguageSkills';
 
 const LANGUAGE_LIST: LanguageLevel[] = [
   {

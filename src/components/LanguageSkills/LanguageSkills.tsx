@@ -1,5 +1,5 @@
 import React from 'react';
-import './Language-skills.css';
+import './LanguageSkills.css';
 import { useTranslation } from 'react-i18next';
 import ProgressBar from '../ProgressBar/ProgressBar';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import SocialMedia from '../Social-media/Social-media';
+import SocialMedia from '../SocialMedia/SocialMedia';
 import './Footer.css';
 
 const Footer: React.FunctionComponent = () => {
