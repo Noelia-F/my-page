@@ -24,8 +24,8 @@
 
 .App-languages-skills__level {
   margin: 0 6px;
-  height: 24px;
-  width: 24px;
+  height: 16px;
+  width: 16px;
   background-color: var(--PRINCIPAL-COLOR);
   border-radius: 50%;
   display: inline-block;
