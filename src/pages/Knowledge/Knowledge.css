@@ -1,12 +1,10 @@
 .App-section__content--knowledge {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 24px;
 }
 
 .App-languages-skills {
-  background-color: var(--PRINCIPAL-COLOR);
-  color: var(--CONTRAST-COLOR);
   padding: 24px;
 }
 

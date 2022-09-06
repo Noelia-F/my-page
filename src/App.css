@@ -1,9 +1,9 @@
 .App {
   --TOGGLE-BACKGROUND: darkblue;
-  --TOGGLE-CIRCLE-BACKGROUND: white;
+  --TOGGLE-CIRCLE-BACKGROUND: #fff;
   --PRINCIPAL-COLOR: #DAE5EC;
   --ACCENT-COLOR: #DBA507;
-  --SECONDARY-COLOR: #07485B;
+  --SECONDARY-COLOR: #fff;
   --CONTRAST-COLOR: #002B38;
   --PRINCIPAL-TITLE-SIZE: 24px;
   --PRINCIPAL-SUBTITLE-SIZE: 18px;
@@ -15,7 +15,7 @@
 
 .dark-mode {
   --TOGGLE-BACKGROUND: darkblue;
-  --TOGGLE-CIRCLE-BACKGROUND: white;
+  --TOGGLE-CIRCLE-BACKGROUND: #fff;
   --CONTRAST-COLOR: #fff;
   --PRINCIPAL-COLOR: #202020;
   --SECONDARY-COLOR: #333;
@@ -47,15 +47,10 @@
 
 .light-mode .App-section--contrast {
   background-color: var(--SECONDARY-COLOR);
-  color: var(--PRINCIPAL-COLOR);
 }
 
 .dark-mode .App-section--contrast {
   background-color: var(--SECONDARY-COLOR);
-}
-
-.App-section--contrast .App-link {
-  color: var(--PRINCIPAL-COLOR);
 }
 
 .App-link {

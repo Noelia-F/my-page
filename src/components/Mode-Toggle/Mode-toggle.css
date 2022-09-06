@@ -21,9 +21,9 @@
 }
 
 .App-toggle__circle {
-  width: 18px;
-  height: 18px;
-  border-radius: 18px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
   border-style: solid;
   border-width: 1px;
   position: absolute;
