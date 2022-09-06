@@ -43,7 +43,7 @@
 .App-section__content {
   flex-grow: 1;
   width: 100%;
-  padding: 24px;
+  padding: 16px 0;
 }
 
 .light-mode .App-section--contrast {
@@ -106,5 +106,9 @@
     --PRINCIPAL-TITLE-SIZE: 36px;
     --PRINCIPAL-TITLE-SECTION-SIZE: 32px;
     --PRINCIPAL-SUBTITLE-SIZE: 24px;
+  }
+
+  .App-section__content {
+    padding: 24px;
   }
 }

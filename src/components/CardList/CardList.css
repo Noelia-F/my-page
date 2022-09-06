@@ -1,6 +1,7 @@
 .App-card-list {
   box-sizing: border-box;
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat( auto-fit, minmax(50px, 80px) );
   grid-template-rows: repeat(auto-fit, minmax(50px, 80px));
   gap: 24px;
