@@ -1,23 +1,35 @@
 import React from 'react';
 import './Knowledge.css';
 import { useTranslation } from 'react-i18next';
-// import WorkingProcess from '../../components/WorkingProcess/WorkingProcess';
-// import Images from '../../assets/images/index';
 import CardList from '../../components/CardList/CardList';
+import LanguageSkills, { LanguageLevel } from '../../components/LanguageSkills/LanguageSkills';
+
+const LANGUAGE_LIST: LanguageLevel[] = [
+  {
+    name: 'spanish',
+    levelName: 'languageNative',
+    level: 6,
+  },
+  {
+    name: 'english',
+    levelName: 'languageUpperIntermediate',
+    level: 4,
+  },
+  {
+    name: 'korean',
+    levelName: 'languagePreIntermediate',
+    level: 2,
+  },
+]
 
 const Knowledge: React.FunctionComponent = () => {
   const { t } = useTranslation();
-  // const renderListOfImages = (images: any) => {
-  //   return Object.keys(images).map(key => <li className='App-card-item'><img alt='js' src={images[key]} /></li>);
-  // }
   return (
     <section className="App-section App-section--contrast">
-      <h2 className="App-subtitle">{t('knowledge')}</h2>
-      <div className='App-section__content'>
+      <h2 className='App-title-section'>{t('knowledge')}</h2>
+      <div className='App-section__content App-section__content--knowledge'>
         <CardList />
-        {/* <ul className='App-card-list'>
-          {renderListOfImages(Images)}
-        </ul> */}
+        <LanguageSkills languageList={LANGUAGE_LIST}/>
       </div>
     </section>
   );

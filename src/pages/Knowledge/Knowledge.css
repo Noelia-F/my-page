@@ -1,0 +1,11 @@
+.App-section__content--knowledge {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+}
+
+@media (min-width: 900px) {
+  .App-section__content--knowledge {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+}

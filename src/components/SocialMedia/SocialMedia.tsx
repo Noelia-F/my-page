@@ -1,5 +1,5 @@
 import React from 'react';
-import './Social-media.css';
+import './SocialMedia.css';
 import {ReactComponent as Linkedin} from "../../icons/linkedin.svg";
 import {ReactComponent as Github} from "../../icons/github.svg";
 import {ReactComponent as Email} from "../../icons/email.svg";

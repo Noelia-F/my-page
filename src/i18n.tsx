@@ -24,7 +24,13 @@ i18n
           career: 'Career',
           knowledge: 'Knowledge',
           homeDescription: 'Web developer with kowledge in design',
-          workingProcess: 'We are working on it...'
+          workingProcess: 'We are working on it...',
+          english: 'English',
+          spanish: 'Spanish',
+          korean: 'Korean',
+          languagePreIntermediate: 'Pre-intermediate',
+          languageUpperIntermediate: 'Upper-intermediate',
+          languageNative: 'Native',
         }
       },
       es: {
@@ -34,7 +40,13 @@ i18n
           career: 'Trayectoria',
           knowledge: 'Conocimientos',
           homeDescription: 'Desarrolladora web con conocimientos en diseño',
-          workingProcess: 'Estamos trabajando en ello...'
+          workingProcess: 'Estamos trabajando en ello...',
+          english: 'Inglés',
+          spanish: 'Español',
+          korean: 'Coreano',
+          languagePreIntermediate: 'Pre-intermedio',
+          languageUpperIntermediate: 'Intermedio-alto',
+          languageNative: 'Nativo',
         }
       }
     }

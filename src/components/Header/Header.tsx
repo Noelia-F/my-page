@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import { Link } from '../../models/Link.model';
 import Languages from '../Languages/Languages';
-import ModeToggle from '../Mode-Toggle/Mode-toggle';
+import ModeToggle from '../ModeToggle/ModeToggle';
 import './Header.css';
 
 interface Props {
