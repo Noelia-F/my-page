@@ -4,9 +4,7 @@
   grid-template-columns: repeat( auto-fit, minmax(50px, 80px) );
   grid-template-rows: repeat(auto-fit, minmax(50px, 80px));
   gap: 24px;
-  list-style: none;
-  margin: auto;
-  padding: 0;
+  margin: auto 0;
   max-width: 900px;
 }
 

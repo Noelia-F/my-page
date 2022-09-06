@@ -7,7 +7,7 @@ const Projects: React.FunctionComponent = () => {
   const { t } = useTranslation();
   return (
     <section className="App-section App-section--contrast">
-      <h2 className="App-subtitle">{t('projects')}</h2>
+      <h2 className='App-title-section'>{t('projects')}</h2>
       <div className='App-section__content'>
         <WorkingProcess />
       </div>

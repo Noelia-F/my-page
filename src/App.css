@@ -6,6 +6,7 @@
   --SECONDARY-COLOR: #fff;
   --CONTRAST-COLOR: #002B38;
   --PRINCIPAL-TITLE-SIZE: 24px;
+  --PRINCIPAL-TITLE-SECTION-SIZE: 20px;
   --PRINCIPAL-SUBTITLE-SIZE: 18px;
   text-align: left;
   position: relative;
@@ -42,7 +43,7 @@
 .App-section__content {
   flex-grow: 1;
   width: 100%;
-  padding: 24px 0;
+  padding: 24px;
 }
 
 .light-mode .App-section--contrast {
@@ -62,20 +63,37 @@
 }
 
 .App-title {
-  margin: 0;
-  padding: 0;
   font-size: var(--PRINCIPAL-TITLE-SIZE);
   font-family: 'Playfair Display', serif;
   font-weight: 600;
   color: var(--CONTRAST-COLOR);
 }
 
+.App-title-section {
+  font-size: var(--PRINCIPAL-TITLE-SECTION-SIZE);
+  font-weight: 600;
+  border-left: 4px solid var(--CONTRAST-COLOR);
+  padding: 12px;
+  color: var(--CONTRAST-COLOR);
+  width: 100%;
+}
+
+.App-section .App-title-section {
+  margin-bottom: 24px;
+}
+
 .App-subtitle {
-  margin: 0;
-  padding: 0;
   font-size: var(--PRINCIPAL-SUBTITLE-SIZE);
   font-weight: 500;
   width: 100%;
+}
+
+.App-text {
+  font-size: 16px;
+}
+
+.App-text--highlight {
+  font-weight: 700;
 }
 
 .App-notes {
@@ -86,6 +104,7 @@
 @media (min-width: 500px) {
   .App {
     --PRINCIPAL-TITLE-SIZE: 36px;
+    --PRINCIPAL-TITLE-SECTION-SIZE: 32px;
     --PRINCIPAL-SUBTITLE-SIZE: 24px;
   }
 }

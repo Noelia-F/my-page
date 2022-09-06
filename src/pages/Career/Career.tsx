@@ -8,13 +8,10 @@ const Career: React.FunctionComponent = () => {
   const { t } = useTranslation();
   return (
     <section className="App-section">
-      <h2 className="App-subtitle">{t('career')}</h2>
+      <h2 className='App-title-section'>{t('career')}</h2>
       <div className='App-section__content'>
         <WorkingProcess />
       </div>
-      {/* <Working />
-      <span className='App-notes'>Image by <a className='App-link' href='https://pixabay.com/users/sara_torda-888816/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2298286'>Sara Torda</a> from <a className='App-link' href='https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2298286'>Pixabay</a></span>
-      <p className='App-description'>{t('workingProcess')} &#9829;</p> */}
     </section>
   );
 }
