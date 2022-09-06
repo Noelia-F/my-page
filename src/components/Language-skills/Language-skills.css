@@ -1,0 +1,31 @@
+.App-languages-skills {
+  padding: 24px;
+  margin: auto 0;
+  border-left: 1px solid var(--CONTRAST-COLOR);
+}
+
+.App-languages-skills__item {
+  padding: 16px;
+  border-bottom: 1px dashed var(--CONTRAST-COLOR);
+  display: flex;
+  justify-content: space-between;
+}
+
+.App-languages-skills__bar {
+  display: flex;
+  align-items: center;
+}
+
+.App-languages-skills__level {
+  margin: 0 6px;
+  height: 16px;
+  width: 16px;
+  background-color: var(--PRINCIPAL-COLOR);
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid var(--CONTRAST-COLOR);
+}
+
+.App-languages-skills__level.completed {
+  background-color: var(--CONTRAST-COLOR);
+}

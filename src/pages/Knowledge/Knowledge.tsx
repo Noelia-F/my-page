@@ -2,6 +2,25 @@ import React from 'react';
 import './Knowledge.css';
 import { useTranslation } from 'react-i18next';
 import CardList from '../../components/CardList/CardList';
+import LanguageSkills, { LanguageLevel } from '../../components/Language-skills/Language-skills';
+
+const LANGUAGE_LIST: LanguageLevel[] = [
+  {
+    name: 'spanish',
+    levelName: 'languageNative',
+    level: 4,
+  },
+  {
+    name: 'english',
+    levelName: 'languageUpperIntermediate',
+    level: 6,
+  },
+  {
+    name: 'korean',
+    levelName: 'languagePreIntermediate',
+    level: 2,
+  },
+]
 
 const Knowledge: React.FunctionComponent = () => {
   const { t } = useTranslation();
@@ -10,68 +29,7 @@ const Knowledge: React.FunctionComponent = () => {
       <h2 className='App-title-section'>{t('knowledge')}</h2>
       <div className='App-section__content App-section__content--knowledge'>
         <CardList />
-        <ul className='App-languages-skills'>
-          <li className='App-languages-skills__item'>
-            <div>
-              <p className='App-text App-text--highlight'>Español</p>
-              <span className='App-notes'>Nativo</span>
-            </div>
-            <ul className='App-languages-skills__bar'>
-              <li className='App-languages-skills__level completed' aria-label='language-begginer'>
-              </li>
-              <li className='App-languages-skills__level' aria-label='language-pre-intermediate'>
-              </li>
-              <li className='App-languages-skills__level' aria-label='language-intermediate'>
-              </li>
-              <li className='App-languages-skills__level' aria-label='language-upper-intermediate'>
-              </li>
-              <li className='App-languages-skills__level' aria-label='language-advance'>
-              </li>
-              <li className='App-languages-skills__level' aria-label='language-native'>
-              </li>
-            </ul>
-          </li>
-          <li className='App-languages-skills__item'>
-            <div>
-              <p className='App-text App-text--highlight'>Inglés</p>
-              <span className='App-notes'>Intermedio-alto</span>
-            </div>
-            <ul className='App-languages-skills__bar'>
-              <li className='App-languages-skills__level completed' aria-label='language-begginer'>
-              </li>
-              <li className='App-languages-skills__level' aria-label='language-pre-intermediate'>
-              </li>
-              <li className='App-languages-skills__level' aria-label='language-intermediate'>
-              </li>
-              <li className='App-languages-skills__level' aria-label='language-upper-intermediate'>
-              </li>
-              <li className='App-languages-skills__level' aria-label='language-advance'>
-              </li>
-              <li className='App-languages-skills__level' aria-label='language-native'>
-              </li>
-            </ul>
-          </li>
-          <li className='App-languages-skills__item'>
-            <div>
-              <p className='App-text App-text--highlight'>Español</p>
-              <span className='App-notes'>Pre-intermedio</span>
-            </div>
-            <ul className='App-languages-skills__bar'>
-              <li className='App-languages-skills__level completed' aria-label='language-begginer'>
-              </li>
-              <li className='App-languages-skills__level' aria-label='language-pre-intermediate'>
-              </li>
-              <li className='App-languages-skills__level' aria-label='language-intermediate'>
-              </li>
-              <li className='App-languages-skills__level' aria-label='language-upper-intermediate'>
-              </li>
-              <li className='App-languages-skills__level' aria-label='language-advance'>
-              </li>
-              <li className='App-languages-skills__level' aria-label='language-native'>
-              </li>
-            </ul>
-          </li>
-        </ul>
+        <LanguageSkills languageList={LANGUAGE_LIST}/>
       </div>
     </section>
   );
