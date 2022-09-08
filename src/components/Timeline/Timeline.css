@@ -1,0 +1,49 @@
+.App-timeline__element {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: 24px;
+}
+
+.App-timeline__date {
+  background-color: var(--CONTRAST-COLOR);
+  color: var(--SECONDARY-COLOR);
+  border-radius: 2px;
+  padding: 8px;
+}
+
+.App-timeline__content {
+  padding-left: 60px;
+  border-left: 2px solid var(--CONTRAST-COLOR);
+  position: relative;
+}
+
+.App-timeline__content__item {
+  padding-bottom: 16px;
+}
+
+.App-timeline__dot {
+  height: 44px;
+  width: 44px;
+  background-color: var(--CONTRAST-COLOR);
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid var(--CONTRAST-COLOR);
+  position: absolute;
+  left: -22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-timeline__dot path,
+.App-timeline__dot svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--PRINCIPAL-COLOR);
+}
+
+.App-timeline__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
