@@ -1,10 +1,6 @@
 import React from 'react';
 import './Career.css';
-import {ReactComponent as Working} from '../../icons/working.svg';
 import { useTranslation } from 'react-i18next';
-import WorkingProcess from '../../components/WorkingProcess/WorkingProcess';
-import {ReactComponent as Briefcase} from "../../assets/icons/briefcase.svg";
-import {ReactComponent as Book} from "../../assets/icons/book.svg";
 import TimeLine, { TimelineData } from '../../components/Timeline/Timeline';
 
 const CAREER_TIMELINE: TimelineData[] = [
@@ -94,7 +90,7 @@ const CAREER_TIMELINE: TimelineData[] = [
 const Career: React.FunctionComponent = () => {
   const { t } = useTranslation();
   return (
-    <section className="App-section">
+    <section className="App-section" id='page-career'>
       <h2 className='App-title-section'>{t('career')}</h2>
       <div className='App-section__content'>
         <TimeLine timelineList={CAREER_TIMELINE} />
