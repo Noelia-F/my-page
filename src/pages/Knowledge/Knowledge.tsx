@@ -25,7 +25,7 @@ const LANGUAGE_LIST: LanguageLevel[] = [
 const Knowledge: React.FunctionComponent = () => {
   const { t } = useTranslation();
   return (
-    <section className="App-section App-section--contrast">
+    <section className="App-section App-section--contrast" id='page-knowledge'>
       <h2 className='App-title-section'>{t('knowledge')}</h2>
       <div className='App-section__content App-section__content--knowledge'>
         <CardList />

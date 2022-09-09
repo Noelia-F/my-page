@@ -19,8 +19,17 @@
   width: 100%;
 }
 
-.App-home__button {
+.App-home__action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transform: rotate(90deg);
+  text-decoration: none;
+  color: var(--CONTRAST-COLOR);
+  border-radius: 45px;
+  width: 45px;
+  height: 45px;
+  background-color: var(--ACCENT-COLOR);
 }
 
 .App-title-box {

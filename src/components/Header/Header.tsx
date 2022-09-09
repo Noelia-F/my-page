@@ -19,22 +19,22 @@ const Header: React.FunctionComponent<Props> = ({onChangeMode}) => {
   const NAV_LINKS: Link[] = [
     {
       id: 'nav-home', 
-      path: '#',
+      path: '#page-home',
       name: 'home',
     },
     {
       id: 'nav-projects', 
-      path: '#',
+      path: '#page-projects',
       name: 'projects',
     },
     {
       id: 'nav-career', 
-      path: '#',
+      path: '#page-career',
       name: 'career',
     },
     {
       id: 'nav-knowledge', 
-      path: '#',
+      path: '#page-knowledge',
       name: 'knowledge',
     },
   ];

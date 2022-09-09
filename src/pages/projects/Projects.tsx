@@ -6,7 +6,7 @@ import WorkingProcess from '../../components/WorkingProcess/WorkingProcess';
 const Projects: React.FunctionComponent = () => {
   const { t } = useTranslation();
   return (
-    <section className="App-section App-section--contrast">
+    <section className="App-section App-section--contrast" id='page-projects'>
       <h2 className='App-title-section'>{t('projects')}</h2>
       <div className='App-section__content'>
         <WorkingProcess />
