@@ -39,7 +39,7 @@ const Header: React.FunctionComponent<Props> = ({onChangeMode}) => {
     },
   ];
   const renderListOfLinks = (links: Link[]) => {
-    return links.map(link => <a href={link.path} key={link.id} className="App-link--menu">{t(link.name)}</a>);
+    return links.map(link => <a href={link.path} key={link.id}  onClick={() => changeMode()} className="App-link--menu">{t(link.name)}</a>);
   }
   return (
     <header className='App-header'>

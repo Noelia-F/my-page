@@ -65,15 +65,7 @@
   width: 100%;
 }
 
-.App-menu--closed .App-burger-bar {
-  background-color: var(--CONTRAST-COLOR);
-}
-
-.App-menu--opened .App-burger-bar {
-  background-color: var(--PRINCIPAL-COLOR);
-}
-
-.dark-mode .App-menu--opened .App-burger-bar {
+.App-burger-bar {
   background-color: var(--CONTRAST-COLOR);
 }
 
@@ -128,12 +120,8 @@
 
 .App-link--menu {
   padding: 12px;
-  color: var(--PRINCIPAL-COLOR);
-  display: block;
-}
-
-.dark-mode .App-link--menu {
   color: var(--CONTRAST-COLOR);
+  display: block;
 }
 
 /** Config */

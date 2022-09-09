@@ -11,21 +11,21 @@ const CAREER_TIMELINE: TimelineData[] = [
         type: 'work',
         title: 'Loycus',
         subtitle: 'Front-End Developer',
-        description: 'Desarrollo web del site y de las diferentes aplicaciones internas de la empresa.',
+        description: 'careerLoycusDescription',
         tags: ['HTML', 'CSS(Sass)', 'Angular 8+', 'Rxjs', 'Vue', 'React', 'Git']
       },
       {
         type: 'education',
         title: 'AEPI',
-        subtitle: 'Curso MEAN (2018)',
-        description: 'Curso enfocado en el aprendizaje de la base de datos de Mongo, Express, Angular y NodeJS',
+        subtitle: 'careerAepiSubtitle',
+        description: 'careerAepiDescription',
         tags: ['Mongo', 'Express', 'NodeJS', 'Angular']
       },
       {
         type: 'work',
         title: 'iAhorro',
         subtitle: 'Front-End Developer (2018)',
-        description: 'Refactorización y desarrollo web del site y diseño y rediseño del site',
+        description: 'careeriAhorroDescription',
         tags: ['HTML', 'CSS(Sass)', 'Bootstrap', 'Javascript', 'Git', 'Photoshop']
       },
     ],
@@ -36,8 +36,8 @@ const CAREER_TIMELINE: TimelineData[] = [
       {
         type: 'education',
         title: 'Adalab',
-        subtitle: 'Curso Front-End developer',
-        description: 'Curso enfocado en el aprendizaje del desarrollo Front-End',
+        subtitle: 'Front-End developer',
+        description: 'careerAdalabDescription',
         tags: ['HTML', 'CSS', 'JavaScript', 'React', 'Bustrap', 'Git', 'Atom', 'Gulp', 'Terminal(UNIX)', 'Metodologías ágiles']
       },
     ],
@@ -48,8 +48,8 @@ const CAREER_TIMELINE: TimelineData[] = [
       {
         type: 'work',
         title: 'Netsales',
-        subtitle: 'Diseñadora gráfica',
-        description: 'Diseño de elementos para la web con photoshop y maquetación con HTML y CSS',
+        subtitle: 'careerNetsalesTitle',
+        description: 'careerNetsalesDescription',
         tags: ['HTML', 'CSS', 'Photoshop', 'Illustrator']
       },
     ],
@@ -60,15 +60,15 @@ const CAREER_TIMELINE: TimelineData[] = [
       {
         type: 'education',
         title: 'Generation Spain',
-        subtitle: 'Formación en Marketing Digital (2016)',
-        description: 'Formación para adquirir conocimientos relacionados con el marketing digital',
+        subtitle: 'careerGenerationTitle',
+        description: 'careerGenerationDescription',
         tags: ['Analytics', 'HTML', 'Google Ads']
       },
       {
         type: 'education',
         title: 'CICE',
-        subtitle: 'Máster en Fotografía y Postproducción digital',
-        description: 'Máster enfocado en el aprendizaje de la fotografía y la postproducción digital',
+        subtitle: 'careerCiceTitle',
+        description: 'careerCiceDescription',
         tags: ['Photoshop', 'LIghtroom']
       },
     ],
@@ -79,8 +79,8 @@ const CAREER_TIMELINE: TimelineData[] = [
       {
         type: 'education',
         title: 'Univ.Rey Juan Carlos',
-        subtitle: 'Grado en Comunicación Audiovisual',
-        description: 'Grado universitario en Comunicación Audiovisual para el aprendizaje de la producción, dirección, guionización y elaboración de contenido audiovisual como cine y series',
+        subtitle: 'careerUniversityTitle',
+        description: 'careerUniversityDescription',
         tags: ['Cine', 'HTML', 'Televisión', 'Guión', 'Producción audiovisual', 'Videojuegos', 'Narrativa']
       },
     ],
