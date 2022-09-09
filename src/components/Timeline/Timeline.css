@@ -17,6 +17,7 @@
   border-left: 2px solid var(--CONTRAST-COLOR);
   position: relative;
   margin-bottom: 24px;
+  margin-left: 16px;
 }
 
 .App-timeline__content__item {
@@ -79,6 +80,7 @@
 
   .App-timeline__content {
     margin-bottom: 0;
+    margin-left: 0;
   }
   
 }
