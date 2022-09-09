@@ -1,6 +1,6 @@
 .App-timeline__element {
   display: grid;
-  grid-template-columns: 200px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 24px;
 }
 
@@ -12,9 +12,10 @@
 }
 
 .App-timeline__content {
-  padding-left: 60px;
+  padding-left: 40px;
   border-left: 2px solid var(--CONTRAST-COLOR);
   position: relative;
+  margin-bottom: 24px;
 }
 
 .App-timeline__content__item {
@@ -46,4 +47,23 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  margin: 16px 0;
+}
+
+@media (min-width: 720px) {
+  .App-timeline__element {
+    grid-template-columns: 200px minmax(0, 1fr);
+  }
+
+  .App-timeline__content {
+    margin-bottom: 0;
+  }
+  
+}
+
+@media (min-width: 500px) {
+  .App-timeline__content {
+    padding-left: 60px;
+  }
+  
 }

@@ -3,6 +3,7 @@ import './Timeline.css';
 import { useTranslation } from 'react-i18next';
 import {ReactComponent as Briefcase} from "../../assets/icons/briefcase.svg";
 import {ReactComponent as Book} from "../../assets/icons/book.svg";
+import Tag from '../Tag/Tag';
 
 export interface TimelineContent {
   type: 'work' | 'education';
@@ -25,7 +26,7 @@ const TimeLine: React.FunctionComponent<Props> = ({timelineList}) => {
   const { t } = useTranslation();
 
   const renderListOfTags = (tags: string[]) => {
-    return tags.map((tag) => (<li><span>{tag}</span></li>))
+    return tags.map((tag) => (<li><Tag label={tag} color='secondary' /></li>))
   }
 
   const renderListOfTimelineContent = (timelineContent: TimelineContent[]) => {
