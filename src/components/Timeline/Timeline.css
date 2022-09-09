@@ -1,0 +1,91 @@
+.App-timeline__element {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+  cursor: pointer;
+}
+
+.App-timeline__date {
+  background-color: var(--CONTRAST-COLOR);
+  color: var(--SECONDARY-COLOR);
+  border-radius: 2px;
+  padding: 8px;
+}
+
+.App-timeline__content {
+  padding-left: 40px;
+  border-left: 2px solid var(--CONTRAST-COLOR);
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.App-timeline__content__item {
+  padding-bottom: 16px;
+}
+
+.App-timeline__content__description {
+  height: 0;
+  transform: scaleY(0);
+  transition: 0.4s 0.6s;
+}
+
+.selected .App-timeline__content__description {
+  height: 100%;
+  transform: scaleY(1);
+  transition: 0.4s 0.6s;
+}
+
+.App-timeline__dot {
+  height: 44px;
+  width: 44px;
+  background-color: var(--CONTRAST-COLOR);
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid var(--CONTRAST-COLOR);
+  position: absolute;
+  left: -22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selected .App-timeline__dot {
+  background-color: var(--PRINCIPAL-COLOR);
+}
+
+.App-timeline__dot path,
+.App-timeline__dot svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--PRINCIPAL-COLOR);
+}
+
+.selected .App-timeline__dot path,
+.selected .App-timeline__dot svg {
+  fill: var(--CONTRAST-COLOR);
+}
+
+.App-timeline__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+@media (min-width: 720px) {
+  .App-timeline__element {
+    grid-template-columns: 200px minmax(0, 1fr);
+  }
+
+  .App-timeline__content {
+    margin-bottom: 0;
+  }
+  
+}
+
+@media (min-width: 500px) {
+  .App-timeline__content {
+    padding-left: 60px;
+  }
+  
+}

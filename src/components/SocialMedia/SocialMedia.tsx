@@ -1,8 +1,8 @@
 import React from 'react';
 import './SocialMedia.css';
-import {ReactComponent as Linkedin} from "../../icons/linkedin.svg";
-import {ReactComponent as Github} from "../../icons/github.svg";
-import {ReactComponent as Email} from "../../icons/email.svg";
+import {ReactComponent as Linkedin} from "../../assets/icons/linkedin.svg";
+import {ReactComponent as Github} from "../../assets/icons/github.svg";
+import {ReactComponent as Email} from "../../assets/icons/email.svg";
 import { Link } from '../../models/Link.model';
 
 export const SOCIAL_MEDIA_LINKS: Link[] =  [

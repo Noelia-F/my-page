@@ -1,6 +1,6 @@
 import React from 'react';
 import './WorkingProcess.css';
-import {ReactComponent as Working} from '../../icons/working.svg';
+import {ReactComponent as Working} from '../../assets/icons/working.svg';
 import { useTranslation } from 'react-i18next';
 
 const WorkingProcess: React.FunctionComponent = () => {
