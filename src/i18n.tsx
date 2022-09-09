@@ -31,6 +31,19 @@ i18n
           languagePreIntermediate: 'Pre-intermediate',
           languageUpperIntermediate: 'Upper-intermediate',
           languageNative: 'Native',
+          careerLoycusDescription: 'Website development and company web tools development.',
+          careerAepiSubtitle: 'MEAN course (2018)',
+          careerAepiDescription: 'Learning how to use Mongo, Express, Angular and NodeJs.',
+          careeriAhorroDescription: 'Refactoring and website creation. Moreover, website deisgn and redesign.',
+          careerAdalabDescription: 'Learning how to be a Front-End developer.',
+          careerNetsalesDescription: 'Webpage layout with HTML and CSS (self-training) and graphic design.',
+          careerNetsalesTitle: 'Graphic Designer',
+          careerGenerationTitle: 'Course Digital Marketing (2016)',
+          careerGenerationDescription: 'Learning tools to become a Digital Marketing professional.',
+          careerCiceTitle: 'Master in Photography and Digital Postproduction',
+          careerCiceDescription: 'Learning photography and digital postproduction.',
+          careerUniversityTitle: 'Audiovisual Communication Degree',
+          careerUniversityDescription: 'Learning production, direction, scriptwriting and preparation of audiovisual content such as movies and series.',
         }
       },
       es: {
@@ -47,6 +60,20 @@ i18n
           languagePreIntermediate: 'Pre-intermedio',
           languageUpperIntermediate: 'Intermedio-alto',
           languageNative: 'Nativo',
+          careerLoycusDescription: 'Desarrollo web del site y de las diferentes aplicaciones internas de la empresa.',
+          careerAepiSubtitle: 'Curso MEAN',
+          careerAepiDescription: 'Curso enfocado en el aprendizaje de la base de datos de Mongo, Express, Angular y NodeJS',
+          careeriAhorroDescription: 'Refactorización y desarrollo web del site y diseño y rediseño del site.',
+          careerAdalabDescription: 'Curso enfocado en el aprendizaje del desarrollo Front-End.',
+          careerNetsalesDescription: 'Maquetación con HTML y CSS (auto-formación) y diseño de elementos para la web con photoshop.',
+          careerNetsalesTitle: 'Diseñadora Gráfica',
+          careerGenerationTitle: 'Formación en Marketing Digital (2016)',
+          careerGenerationDescription: 'Learning tools to become a Digital Marketing professional.',
+          careerCiceTitle: 'Máster en Fotografía y Postproducción digital',
+          careerCiceDescription: 'Máster enfocado en el aprendizaje de la fotografía y la postproducción digital.',
+          careerUniversityTitle: 'Grado universitario en Comunicación Audiovisual',
+          careerUniversityDescription: 'aprendizaje de la producción, dirección, guionización y elaboración de contenido audiovisual como cine y series.',
+
         }
       }
     }
