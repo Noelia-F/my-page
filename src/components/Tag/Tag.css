@@ -1,0 +1,20 @@
+.App-tag {
+  padding: 4px;
+  border-radius: 2px;
+  margin: 4px;
+}
+
+.App-tag--contrast {
+  background-color: var(--CONTRAST-COLOR);
+  color: var(--SECONDARY-COLOR);
+}
+
+.App-tag--principal {
+  background-color: var(--PRINCIPAL-COLOR);
+  color: var(--CONTRAST-COLOR);
+}
+
+.App-tag--secondary {
+  background-color: var(--SECONDARY-COLOR);
+  color: var(--CONTRAST-COLOR);
+}
