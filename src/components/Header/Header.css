@@ -151,4 +151,7 @@
   .App-nav-background {
     display: none;
   }
+  .App-menu--opened .App-nav {
+    transform: translateX(0);
+  }
 }
